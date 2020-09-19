@@ -1,9 +1,12 @@
 <?php
 require_once('../../vendor/autoload.php');
+require_once('../config/db.conf.php');
+
+$container["settings"] = $config;
 
 //database connection with Eloquent
 $capsule = new \Illuminate\Database\Capsule\Manager;
-$capsule->addConnection(parse_ini_file('../config/db.conf.ini'));
+$capsule->addConnection($container['settings']['db']);
 $capsule->setAsGlobal();
 $capsule->bootEloquent();
 

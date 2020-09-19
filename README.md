@@ -9,7 +9,7 @@ a text-file editor
 ## Configuration ##
 
 Create file ```env.local.sh``` for initiate your database (see exemple on ```env.sh```)
-Create file ```db.conf.ini``` to connect your application at your database (see exemple on ```db.conf.example.ini```)
+Create file ```db.conf.php``` to connect your application at your database (see exemple on ```db.conf.example.php```)
 
 ## Initialization ##
 
